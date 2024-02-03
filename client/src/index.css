@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: rgb(6, 6, 6);
+  color: whitesmoke;
+}
+
+.active{
+  color: #a020f0; 
+}
+
