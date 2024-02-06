@@ -12,9 +12,12 @@ const Home = () => {
 
   const getUserData = async () => {
     try {
-      const user = await axios.get("http://localhost:3000/api/user", {
-        withCredentials: true,
-      });
+      const user = await axios.get(
+        "https://secureauth-server.onrender.com/api/user",
+        {
+          withCredentials: true,
+        }
+      );
       dispatch(setUser(user.data));
       setUserData(user.data);
     } catch (error) {

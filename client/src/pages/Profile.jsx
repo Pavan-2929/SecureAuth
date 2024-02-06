@@ -36,7 +36,7 @@ const Profile = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/user/update",
+        "https://secureauth-server.onrender.com/api/user/update",
         formData,
         {
           withCredentials: true,
@@ -109,7 +109,7 @@ const Profile = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/auth/logout",
+        "https://secureauth-server.onrender.com/api/auth/logout",
         { withCredentials: true }
       );
 
@@ -149,7 +149,7 @@ const Profile = () => {
   const handleDeleteUser = async () => {
     try {
       const response = await axios.delete(
-        "http://localhost:3000/api/auth/delete",
+        "https://secureauth-server.onrender.com/api/auth/delete",
         {
           withCredentials: true,
         }

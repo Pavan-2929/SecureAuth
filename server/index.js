@@ -6,7 +6,7 @@ import authRouter from "./routes/auth.routes.js";
 import userRotuer from "./routes/user.routes.js";
 
 const app = express();
-app.use(cors({credentials: true, origin:"http://localhost:5173"}))
+app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 app.use(express.json())
 dotenv.config();
 
